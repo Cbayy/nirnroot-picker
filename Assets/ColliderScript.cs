@@ -5,7 +5,9 @@ using UnityEngine;
 public class ColliderScript : MonoBehaviour
 {
 
-        public HUD hud;
+    public HUD hud;
+    //GameObject pickup = null;
+    bool pickup = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,17 +17,21 @@ public class ColliderScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(pickup == true && Input.GetKeyDown(KeyCode.E)){
+            hud.CloseMessageText();
+            print(this.name);
+            Destroy(gameObject);
+        }
     }
 
 
     private void OnTriggerEnter(Collider other){
-        print("EE");
+        pickup = true;
         hud.OpenMessageText("");
     }
 
     private void OnTriggerExit(Collider other){
-        print("OO");
+        pickup = false;
         hud.CloseMessageText();
     }
 }
