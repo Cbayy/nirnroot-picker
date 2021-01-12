@@ -19,7 +19,7 @@ public class ColliderScript : MonoBehaviour
     {
         if(pickup == true && Input.GetKeyDown(KeyCode.E)){
             hud.CloseMessageText();
-            print(this.name);
+            hud.UpdateNirnrootCounter();
             Destroy(gameObject);
         }
     }
