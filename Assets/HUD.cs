@@ -13,7 +13,7 @@ public class HUD : MonoBehaviour{
     void Start()
     {
         nirnrootCounter = 0;
-        totalNirnroot = 1;
+        totalNirnroot = 10;
         nirnrootTextUI.text = "Nirnroot: " + nirnrootCounter + "/" + totalNirnroot;
     }
 
