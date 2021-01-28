@@ -1670,6 +1670,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textUI: {fileID: 212174326}
   nirnrootTextUI: {fileID: 429843243}
+  questStartTextUI: {fileID: 186748747}
 --- !u!1 &1961422646
 GameObject:
   m_ObjectHideFlags: 0
