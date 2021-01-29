@@ -634,7 +634,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.3584906, g: 0.3584906, b: 0.34665364, a: 1}
+  m_Color: {r: 0.5566038, g: 0.5566038, b: 0.50146854, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -1395,7 +1395,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 1618174753}
-  speed: 100
+  speed: 10
   gravity: -9.81
   groundCheck: {fileID: 1961422647}
   groundDistance: 1
