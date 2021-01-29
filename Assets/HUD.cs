@@ -7,6 +7,7 @@ public class HUD : MonoBehaviour{
     public GameObject textUI;
     public Text nirnrootTextUI;
     public Text questStartTextUI;
+    public AudioSource questStartSound;
 
     private int nirnrootCounter;
     int totalNirnroot;
@@ -39,8 +40,10 @@ public class HUD : MonoBehaviour{
     }
 
     IEnumerator startQuest(string text){
+        yield return new WaitForSeconds(5);
         questStartTextUI.text = text;
         questStartTextUI.enabled = true;
+        questStartSound.Play();
         yield return new WaitForSeconds(5);
         questStartTextUI.enabled = false;
     }
