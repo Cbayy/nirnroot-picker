@@ -4220,7 +4220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc9bb3e589ca95a4fb41040b2e304c2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lookRadius: 150
+  lookRadius: 200
   player: {fileID: 1618174754}
 --- !u!1 &2040900381
 GameObject:
